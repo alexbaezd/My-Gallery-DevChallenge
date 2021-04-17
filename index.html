@@ -27,11 +27,15 @@
   </head>
   <body>
     <header>
-      <img
-        class="pic-profile"
-        src="assets/profilePhoto.webp"
-        alt="Rodney Cotton"
-      />
+      <picture>
+        <source srcset="assets/profilePhoto.webp" type="image/webp" />
+        <source srcset="assets/profilePhoto.jpg" type="image/jpeg" />
+        <img
+          class="pic-profile"
+          src="assets/profilePhoto.jpg"
+          alt="Rodney Cotton"
+        />
+      </picture>
       <h1>Rodney Cotton</h1>
       <p>Helsinki, Finland</p>
       <div class="metrics">
@@ -51,22 +55,46 @@
     </header>
     <main>
       <div class="img-hover-zoom">
-        <img class="picture" src="assets/photo1.webp" alt="Sofa, vase" />
+        <picture>
+          <source srcset="assets/photo1.webp" type="image/webp" />
+          <source srcset="assets/photo1.jpg" type="image/jpeg" />
+          <img class="picture" src="assets/photo1.jpg" alt="Sofa, vase" />
+        </picture>
       </div>
       <div class="img-hover-zoom">
-        <img class="picture" src="assets/photo2.webp" alt="Living Room" />
+        <picture>
+          <source srcset="assets/photo2.webp" type="image/webp" />
+          <source srcset="assets/photo2.jpg" type="image/jpeg" />
+          <img class="picture" src="assets/photo2.jpg" alt="Living Room" />
+        </picture>
       </div>
       <div class="img-hover-zoom">
-        <img class="picture" src="assets/photo3.webp" alt="Tub" />
+        <picture>
+          <source srcset="assets/photo3.webp" type="image/webp" />
+          <source srcset="assets/photo3.jpg" type="image/jpeg" />
+          <img class="picture" src="assets/photo3.jpg" alt="Tub" />
+        </picture>
       </div>
       <div class="img-hover-zoom">
-        <img class="picture" src="assets/photo4.webp" alt="Lamp" />
+        <picture>
+          <source srcset="assets/photo4.webp" type="image/webp" />
+          <source srcset="assets/photo4.jpg" type="image/jpeg" />
+          <img class="picture" src="assets/photo4.jpg" alt="Lamp" />
+        </picture>
       </div>
       <div class="img-hover-zoom">
-        <img class="picture" src="assets/photo5.webp" alt="Plant" />
+        <picture>
+          <source srcset="assets/photo5.webp" type="image/webp" />
+          <source srcset="assets/photo5.jpg" type="image/jpeg" />
+          <img class="picture" src="assets/photo5.jpg" alt="Plant" />
+        </picture>
       </div>
       <div class="img-hover-zoom">
-        <img class="picture" src="assets/photo6.webp" alt="Rustic Vase" />
+        <picture>
+          <source srcset="assets/photo6.webp" type="image/webp" />
+          <source srcset="assets/photo6.jpg" type="image/jpeg" />
+          <img class="picture" src="assets/photo6.jpg" alt="Rustic Vase" />
+        </picture>
       </div>
     </main>
     <footer>
