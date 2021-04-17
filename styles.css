@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+:root {
+  --gray: #e5e5e5;
+  --font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 35% auto 5%;
+  font-family: var(--font-family);
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.0875rem 0.45rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.875rem;
+}
+header h1 {
+  font-size: 0.875rem;
+}
+header p {
+  font-size: 0.625rem;
+  color: #a9a9a9;
+}
+header :is(h1, p) {
+  margin-top: 0.7rem;
+  font-weight: 600;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 85px);
+  grid-column-gap: 7px;
+  grid-row-gap: 10px;
+  margin-top: 2.5rem;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+  border-radius: 12px;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+}
+.picture {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.picture:hover {
+  transform: scale(1.2);
+}
+
+main :nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 /2;
+}
+main :nth-child(2) {
+  grid-column: 2 / 4;
+  grid-row: 1 /2;
+}
+main :nth-child(3) {
+  grid-column: 1 / 3;
+  grid-row: 2 /3;
+}
+main :nth-child(4) {
+  grid-column: 3 / 4;
+  grid-row: 2 /4;
+}
+main :nth-child(5) {
+  grid-column: 1 / 2;
+  grid-row: 3 /4;
+}
+main :nth-child(6) {
+  grid-column: 2 / 3;
+  grid-row: 3 /4;
+}
+
+footer,
+:is(a) {
+  text-align: center;
+  align-self: center;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  color: #b9bdcf;
+}
+
+.pic-profile {
+  width: 90px;
+  border-radius: 5px;
+}
+.metrics {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.metrics div {
+  background-color: var(--gray);
+  margin: 0.3rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  width: 78px;
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.metrics .count {
+  color: #4e5150;
+  margin-bottom: 0.25rem;
+}
+.metrics div span {
+  color: #bdbdbd;
+}
+
+@media screen and (min-width: 375px) {
+  main {
+    grid-template-rows: repeat(3, 109px);
+  }
+}
+@media screen and (min-width: 414px) {
+  main {
+    grid-template-rows: repeat(3, 120px);
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-rows: 25% auto 5%;
+  }
+  main {
+    grid-template-rows: repeat(3, 240px);
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+  }
+  .pic-profile {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    grid-template-rows: 20% auto 5%;
+  }
+  main {
+    grid-template-rows: repeat(3, 320px);
+  }
+}

@@ -17,79 +17,62 @@
     />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
     />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Gallery Dev Challenge</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <header>
+      <img
+        class="pic-profile"
+        src="assets/profilePhoto.png"
+        alt="Rodney Cotton"
+      />
+      <h1>Rodney Cotton</h1>
+      <p>Helsinki, Finland</p>
+      <div class="metrics">
+        <div>
+          <span class="count">100</span>
+          <span>Post</span>
+        </div>
+        <div>
+          <span class="count">2,242</span>
+          <span>Followers</span>
+        </div>
+        <div>
+          <span class="count">1,432</span>
+          <span>Following</span>
+        </div>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    </header>
+    <main>
+      <div class="img-hover-zoom">
+        <img class="picture" src="assets/photo1.png" alt="Sofa, vase" />
+      </div>
+      <div class="img-hover-zoom">
+        <img class="picture" src="assets/photo2.png" alt="Living Room" />
+      </div>
+      <div class="img-hover-zoom">
+        <img class="picture" src="assets/photo3.png" alt="Tub" />
+      </div>
+      <div class="img-hover-zoom">
+        <img class="picture" src="assets/photo4.png" alt="Lamp" />
+      </div>
+      <div class="img-hover-zoom">
+        <img class="picture" src="assets/photo5.png" alt="Plant" />
+      </div>
+      <div class="img-hover-zoom">
+        <img class="picture" src="assets/photo6.png" alt="Rustic Vase" />
+      </div>
+    </main>
+    <footer>
+      created by
+      <a href="https://devchallenges.io/portfolio/alexbaezd">Alex Báez</a> -
+      devChallenges.io
+    </footer>
   </body>
 </html>
